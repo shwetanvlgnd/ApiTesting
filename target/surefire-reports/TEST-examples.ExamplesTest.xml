@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="75" failures="0" name="examples.ExamplesTest" time="0.014" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2017.2.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="9+181"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Practice\KarateTestDemo"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Practice\KarateTestDemo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="9+181"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sunil\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\CMake\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\sunil\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\sunil\AppData\Roaming\npm;C:\Users\sunil\.dotnet\tools;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="53.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\sunil"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="9"/>
+    <property name="user.name" value="sunil"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.2.5 test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-9"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="9"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.5\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Scenario: First country should be Afghanistan" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0.003"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="Given path &apos;all&apos;" time="0"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="When method get" time="0.003"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="Then status 200" time="0.001"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="And def firstCountryName = responseJson[0].name" time="0"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="* assert firstCountryName == &apos;Afghanistan&apos;" time="0"/>
+  <testcase classname="Scenario: First country should be Afghanistan" name="Scenario: First country should be Afghanistan" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="Given path &apos;name&apos;,&apos;India&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="And json countries = response" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="* assert countries.length == 2" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="* assert countries[0].name == &apos;British Indian Ocean Territory&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="* assert countries[1].name == &apos;India&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country name" name="Scenario: Search by country name" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="Given path &apos;name&apos;,&apos;aruba&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="And def countryname = responseJson[0].name" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="* assert countryname == &apos;Aruba&apos;" time="0"/>
+  <testcase classname="Scenario: Search by country full name" name="Scenario: Search by country full name" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="Given path &apos;alpha&apos;,&apos;aw&apos;" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="And def countryname = responseJson.name" time="0"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="* assert countryname == &apos;Aruba&apos;" time="0.001"/>
+  <testcase classname="Scenario: Search by ISO 2-letter or 3-letter country code" name="Scenario: Search by ISO 2-letter or 3-letter country code" time="0.001"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="Given path &apos;alpha&apos;" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="And param codes = &apos;col;no;es&apos;" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="Then status 200" time="0.001"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="* assert responseJson.length == 3" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="* assert responseJson[0].name == &apos;Colombia&apos;" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="* assert responseJson[1].name == &apos;Norway&apos;" time="0"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="* assert responseJson[2].name == &apos;Spain&apos;" time="0.001"/>
+  <testcase classname="Scenario: Search by list of ISO 2-letter or 3-letter country codes" name="Scenario: Search by list of ISO 2-letter or 3-letter country codes" time="0.001"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="Given path &apos;currency&apos;,&apos;cop&apos;" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="And def countryname = responseJson[0].name" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="* assert countryname == &apos;Colombia&apos;" time="0"/>
+  <testcase classname="Scenario: Search by ISO currency code" name="Scenario: Search by ISO currency code" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="Given path &apos;capital&apos;,&apos;delhi&apos;" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="And def countryname = responseJson[0].name" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="* assert countryname == &apos;India&apos;" time="0"/>
+  <testcase classname="Scenario: Search by capital city" name="Scenario: Search by capital city" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="Given path &apos;callingcode&apos;,&apos;91&apos;" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="When method get" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="And def countryname = responseJson[0].name" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="* assert countryname == &apos;India&apos;" time="0"/>
+  <testcase classname="Scenario: Search by calling code" name="Scenario: Search by calling code" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="* url &apos;https://restcountries.eu/rest/v2&apos;" time="0.002"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="Given path &apos;region&apos;,&apos;europe&apos;" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="When method get" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="Then status 200" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="And json responseJson = response" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="* assert responseJson.length == 53" time="0"/>
+  <testcase classname="Scenario: To get total number of countries in region" name="Scenario: To get total number of countries in region" time="0"/>
+</testsuite>
